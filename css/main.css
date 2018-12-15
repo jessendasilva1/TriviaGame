@@ -1,11 +1,25 @@
-html,
 body{
-    height: 100%;
-    width: 100%;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
+    color: white;
+    font-family: 'Kalam', cursive;
 }
-#rootDiv{
-    height: 100%;
-    background-color: rgb(0,0,0, 0.85);
+#gameDiv{
+    min-height: 80vh;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+#title{
+    margin-top: 20px;
+    font-size: 80px;
+    flex: 0;
+}
+#thing{
+    flex: 1;
+}
+#correctAnswer{
+    margin-top: 20px;
+}
+#questionDiv{
+    margin-bottom: 20px;
 }
