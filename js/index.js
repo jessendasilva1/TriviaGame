@@ -47,7 +47,7 @@ function count() {
         console.log(time);
         time--;
         $("#time").text(time);
-        if (time < 15) {
+        if (time < 0) {
             outOfTime();
 
         }
@@ -66,7 +66,7 @@ function outOfTime() {
 }
 
 function nextQuestion() {
-    if (questionCounter < 3) {
+    if (questionCounter < 10) {
         answerArray = questionArray[questionCounter].incorrect_answers;
         answerArray.push(questionArray[questionCounter].correct_answer);
         correctAnswer = questionArray[questionCounter].correct_answer;
