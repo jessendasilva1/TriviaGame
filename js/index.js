@@ -29,7 +29,7 @@ function start() {
     questionCounter = 0;
     questionArray = [];
     answerArray = [];
-    var queryURL = "https://opentdb.com/api.php?amount=3&category=18&difficulty=easy&type=multiple";
+    var queryURL = "https://opentdb.com/api.php?amount=10&category=18&difficulty=easy&type=multiple";
     $.ajax({
         url: queryURL,
         method: "GET",
